@@ -42,7 +42,6 @@ func visit(files map[string]bool) filepath.WalkFunc {
 		if files[fn] {
 			fmt.Println(fn)
 		} else {
-			//*files = append(*files, fn)
 			files[fn] = true
 		}
 		return nil
